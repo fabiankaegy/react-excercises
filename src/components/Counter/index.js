@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../Button/Button';
+import Button from '../Button';
 
 class Counter extends Component {
   state = {
@@ -20,9 +20,9 @@ class Counter extends Component {
   render() {
     return (
       <div className="Counter">
-        <h1>{this.state.number}</h1>
+        <h1>Count: {this.state.number}</h1>
         <Button onClick={this.incrementNumber} text="Add" />
-        <Button onClick={this.decrementNumber} text="Remove" />
+        <Button onClick={this.decrementNumber} text="Substract" />
       </div>
     );
   }

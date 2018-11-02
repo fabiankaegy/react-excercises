@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import ListItem from '../ListItem/ListItem';
-import TextInput from '../TextInput/TextInput';
+import './style.css';
+import ListItem from '../ListItem';
+import TextInput from '../TextInput';
 
 class UpdatableList extends Component {
   state = {
