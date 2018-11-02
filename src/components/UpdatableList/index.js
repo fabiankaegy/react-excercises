@@ -4,22 +4,24 @@ import ListItem from '../ListItem';
 import TextInput from '../TextInput';
 
 class UpdatableList extends Component {
-  state = {
-    ListItems: []
-  }
-  addToList = (event) => { 
-    event.preventDefault();
-    var joined = this.state.ListItems.concat(event.target.TextInput.value);
-    this.setState( {
-      ListItems: joined,
-    } );
-    event.target.TextInput.value = '';
-  };
+  /* 
+  * Add state to this component with a parameter
+  * called ListItems that has an empty Array as its value.
+  */
+  
+  /*
+   * Create a function that adds text passed via the 
+   * submit event to the end of the array in the state.
+   */
+  
+  /*
+   * Return one List item for each item in the ListItems array 
+   * stored in the state
+   */
   render() {
     return (
       <div className="updatable-list">
         <TextInput onSubmit={this.addToList} />
-        {this.state.ListItems.map( (item, key) => <ListItem key={key} text={item} />)}
       </div>
     );
   }

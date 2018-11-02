@@ -1,9 +1,10 @@
 import React from 'react';
 
-const ListItem = props => {
-	return (
-		<li>{props.text}</li>
-	);
-}
+/*
+ * Build a dumb component that returns a list element 
+ * with text passed via the props in it.
+ */
 
-export default ListItem;
+/*
+ * Export the component
+ */

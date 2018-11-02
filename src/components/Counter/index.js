@@ -2,27 +2,30 @@ import React, { Component } from 'react';
 import Button from '../Button';
 
 class Counter extends Component {
-  state = {
-    number: 0,
-  }
+  /*
+   * Add state to this component
+   * Include a parameter called number in the
+   * State that has a default value of 0
+   */
 
-  incrementNumber = () => { 
-    this.setState( {
-      number: this.state.number + 1,
-    } );
-  };
-  decrementNumber = () => { 
-    this.setState( {
-      number: this.state.number - 1,
-    } );
-  };
+   /*
+    * Add a function to increase and decrease the 
+    * number in the state
+    */
 
   render() {
+  	/*
+  	 * Add a h3 element in the Counter Div that displays the current
+  	 * number of the state
+  	 */
+  	
+  	/*
+  	 * Add two Button elements and pass the increment / decrement 
+  	 * function to the onclick event. Also pass the text in there.
+  	 */
     return (
       <div className="Counter">
-        <h3>Count: {this.state.number}</h3>
-        <Button onClick={this.incrementNumber} text="Add" />
-        <Button onClick={this.decrementNumber} text="Substract" />
+        
       </div>
     );
   }
