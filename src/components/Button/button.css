@@ -5,3 +5,7 @@ button {
 	color: white;
 	background: #444;
 }
+
+button:last-child, input[type="submit"] {
+	margin-left: 15px;
+}
