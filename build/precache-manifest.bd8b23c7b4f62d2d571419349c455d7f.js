@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-excercises/static/js/runtime~main.34e2b4ad.js"
   },
   {
-    "revision": "ab0793d5b050e163d51a",
-    "url": "/react-excercises/static/js/main.ab0793d5.chunk.js"
+    "revision": "4b26d0d7a2fe2ebd64d7",
+    "url": "/react-excercises/static/js/main.4b26d0d7.chunk.js"
   },
   {
     "revision": "6eb6405c9d99258624bc",
     "url": "/react-excercises/static/js/1.6eb6405c.chunk.js"
   },
   {
-    "revision": "ab0793d5b050e163d51a",
-    "url": "/react-excercises/static/css/main.dce76db9.chunk.css"
+    "revision": "4b26d0d7a2fe2ebd64d7",
+    "url": "/react-excercises/static/css/main.75b090ce.chunk.css"
   },
   {
-    "revision": "e64e53693a32cfe76fa5486f66527249",
+    "revision": "a7ad930f1b7f8099d2fb770604e78980",
     "url": "/react-excercises/index.html"
   }
 ];
