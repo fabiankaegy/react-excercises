@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from './components/Counter/Counter';
+import UpdatableList from './components/UpdatableList/UpdatableList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>Example 1: Counter</h1>
+        <p>Build a counter component that stores a count in state and lets you increment and decrement the count using two buttons</p>
+        <Counter />
+        <hr />
+        <h1>Example 2: Updatable List</h1>
+        <p>Build a Form with a Text Input Field. When the form gets submitted the Text Value of the Input should be added to a list stored in state that renders a ListItem Component for each Element in it.</p>
+        <UpdatableList />
+        <hr />
       </div>
     );
   }
