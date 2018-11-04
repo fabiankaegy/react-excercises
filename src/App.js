@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Counter from './components/Counter';
 import UpdatableList from './components/UpdatableList';
+import Calculator from './components/Calculator';
 
 class App extends Component {
   render() {
@@ -19,6 +20,11 @@ class App extends Component {
           <UpdatableList />
         </div>
         <hr />
+        <div className="excercise late">
+          <h2>Example 3: Calculator</h2>
+          <p>Build a simple traditional Calculator</p>
+          <Calculator />
+        </div>
       </div>
     );
   }
