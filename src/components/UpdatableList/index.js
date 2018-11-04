@@ -7,9 +7,9 @@ class UpdatableList extends Component {
   state = {
     ListItems: []
   }
-  addToList = (event) => { 
+  addToList = event => { 
     event.preventDefault();
-    var joined = this.state.ListItems.concat(event.target.TextInput.value);
+    var joined = this.state.ListItems.concat( event.target.TextInput.value );
     this.setState( {
       ListItems: joined,
     } );
@@ -18,8 +18,8 @@ class UpdatableList extends Component {
   render() {
     return (
       <div className="updatable-list">
-        <TextInput onSubmit={this.addToList} />
-        {this.state.ListItems.map( (item, key) => <ListItem key={key} text={item} />)}
+        <TextInput onSubmit={ this.addToList } />
+        { this.state.ListItems.map( ( item, key ) => <ListItem key={ key } text={ item } /> )}
       </div>
     );
   }

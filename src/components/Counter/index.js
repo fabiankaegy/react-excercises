@@ -7,22 +7,22 @@ class Counter extends Component {
   }
 
   incrementNumber = () => { 
-    this.setState( {
+    this.setState({
       number: this.state.number + 1,
-    } );
+    });
   };
   decrementNumber = () => { 
-    this.setState( {
+    this.setState({
       number: this.state.number - 1,
-    } );
+    });
   };
 
   render() {
     return (
       <div className="Counter">
-        <h3>Count: {this.state.number}</h3>
-        <Button onClick={this.incrementNumber} text="Add" />
-        <Button onClick={this.decrementNumber} text="Substract" />
+        <h3>Count: { this.state.number }</h3>
+        <Button onClick={ this.incrementNumber } text="Add" />
+        <Button onClick={ this.decrementNumber } text="Substract" />
       </div>
     );
   }

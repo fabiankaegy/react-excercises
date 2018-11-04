@@ -2,7 +2,7 @@ import React from 'react';
 
 const ListItem = props => {
 	return (
-		<li>{props.text}</li>
+		<li>{ props.text }</li>
 	);
 }
 
